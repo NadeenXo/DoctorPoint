@@ -2,5 +2,7 @@
 <resources>
     <dimen name="big_font">24sp</dimen>
     <dimen name="small_font">12sp</dimen>
+    <dimen name="normal_font">16sp</dimen>
+
     <dimen name="padding_normal">16dp</dimen>
 </resources>

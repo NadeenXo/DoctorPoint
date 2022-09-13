@@ -9,16 +9,28 @@ import android.view.View;
 
 public class SignIn extends AppCompatActivity {
 
+    private View mSignupLinkId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        signUpWithApp();
+        signWithApp();
+
+        mSignupLinkId = (View) findViewById(R.id.createtextView); //
+        mSignupLinkId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignIn.this,SignUp.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
 
-    private void signUpWithApp() {
+    public void signWithApp() {
         View facebookV = findViewById(R.id.facebookimageView);
         View twV = findViewById(R.id.twitterimageView);
         View googleV = findViewById(R.id.googleimageView);
