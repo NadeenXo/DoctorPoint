@@ -97,7 +97,7 @@
                 app:passwordToggleEnabled="true" />
 
             <Button
-                android:id="@+id/sign_in_btn2"
+                android:id="@+id/sign_in_confirm_btn"
                 style="@style/Button.green"
                 android:layout_width="306dp"
                 android:layout_height="60dp"
@@ -118,7 +118,7 @@
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/orTextView"
-                app:layout_constraintTop_toBottomOf="@+id/sign_in_btn2" />
+                app:layout_constraintTop_toBottomOf="@+id/sign_in_confirm_btn" />
 
             <TextView
                 android:id="@+id/orTextView"
@@ -131,7 +131,7 @@
                 android:text="or sign in with"
                 android:textColor="@color/light_gray"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sign_in_btn2" />
+                app:layout_constraintTop_toBottomOf="@+id/sign_in_confirm_btn" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
